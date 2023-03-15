@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <center>
+        <tr>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="Logo_perpus-NEW.png" height="200" width="200">
+    </center>
+    </tr>
+    <link href="class.css" rel="stylesheet" type="text/css">
+    <script src="jv.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <!-- Loading Page -->
+<body onload="myFunction()" style="margin:0;" bgcolor="#507B86">
+    <br><br><br><br><br><br>
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!--ini masuk ke home-->
+        <a href="Login page admin.html"></a>
+        <div id="counter">10</div>
+        <script>
+            setInterval(function () {
+                var div = document.querySelector("#counter");
+                var count = div.textContent * 1 - 1;
+                div.textContent = count;
+                if (count <= 0) {
+                    window.location.replace("Login page admin.html");
+                }
+            }, 200);
+        </script>
+        </head>
+</body>
+
+</html>

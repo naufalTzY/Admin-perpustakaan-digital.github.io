@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="upload buku.css">
+	<title>Upload Buku</title>
+	
+</head>
+<body>
+	<div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<label class="h3">Upload Sampul Buku</label>
+			<p>Image size must be less than <span>2MB</span></p>
+		</div>
+		<button class="select-image">Select Image</button>
+        <br>
+		<label class="h3">Masukkan Sinopsis Buku:</label>
+		<br>
+		<textarea name="textarea" rows="25" cols="105" placeholder="masukkan sinopsis"></textarea>
+		<br>
+		<br>
+		<label class="h3">Pilih Kategori:</label>
+		<select >
+			<option ></option>
+			<option >Recomendation</option>
+			<option >Populer</option>
+			<option >New Release</option>
+		  </select>
+		  <br>
+		  <br>
+		  <label class="h3">Masukkan Judul Buku:</label>
+		  <input type="text" size="100px">
+		  <br>
+		  <br>
+		  <label class="h3">Masukkan Nama Penulis:</label>
+		  <input type="text" size="100px">
+		  <br>
+		  <br>
+		  <label class="h3">Penerbit:</label>
+		  <input type="text" size="100px">
+		  <br>
+		  <br>
+		  <label class="h3">Masukkan ISBN Buku:<label>
+		  <input type="number">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <a href="Home.html">
+		  <button class="select-image" style="background-color: red;">Batal</button>
+		</a>
+		  <br>
+		  <button class="select-image">Submit</button>
+	</div>
+
+	<script src="upload buku.js"></script>
+</body>
+</html>
